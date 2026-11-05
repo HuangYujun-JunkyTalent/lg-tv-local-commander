@@ -1,0 +1,14 @@
+[Unit]
+Description=LG TV power and input from the keys of a keypad, for the user %i
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=%i
+SupplementaryGroups=input
+ExecStart=/home/%i/.local/share/lg-tv-local-commander/venv/bin/lg-tv-local-commander listen
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

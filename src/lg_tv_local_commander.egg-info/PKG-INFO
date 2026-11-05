@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: lg-tv-local-commander
+Version: 0.1.0
+Summary: Turn an LG webOS TV on and off and switch its HDMI input from the keys of a keypad, over the local network.
+Requires-Python: >=3.11
+Requires-Dist: bscpylgtv>=0.5.5
+Requires-Dist: evdev>=1.6

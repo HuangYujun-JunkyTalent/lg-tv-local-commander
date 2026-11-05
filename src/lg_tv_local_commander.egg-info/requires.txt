@@ -1,0 +1,2 @@
+bscpylgtv>=0.5.5
+evdev>=1.6

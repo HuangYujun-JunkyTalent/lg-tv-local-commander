@@ -1,0 +1,22 @@
+[project]
+name = "lg-tv-local-commander"
+version = "0.1.0"
+description = "Turn an LG webOS TV on and off and switch its HDMI input from the keys of a keypad, over the local network."
+requires-python = ">=3.11"
+dependencies = [
+    "bscpylgtv>=0.5.5",
+    "evdev>=1.6",
+]
+
+[project.scripts]
+lg-tv-local-commander = "lg_tv_local_commander.command_line:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+lg_tv_local_commander = ["webos-manifest.json"]

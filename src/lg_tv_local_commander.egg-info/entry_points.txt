@@ -1,0 +1,2 @@
+[console_scripts]
+lg-tv-local-commander = lg_tv_local_commander.command_line:main
